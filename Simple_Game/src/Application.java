@@ -1,7 +1,7 @@
 import javax.swing.JFrame;
 
 public class Application extends JFrame {
-
+	//add comment
 	public Application() {
 		setSize(10000, 10000);
 		setTitle("Game");
