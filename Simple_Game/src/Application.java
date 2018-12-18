@@ -3,7 +3,7 @@ import javax.swing.JFrame;
 public class Application extends JFrame {
 
 	public Application() {
-		setSize(800, 800);
+		setSize(10000, 10000);
 		setTitle("Game");
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

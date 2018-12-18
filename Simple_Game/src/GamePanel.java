@@ -8,6 +8,7 @@ import javax.swing.JPanel;
 public class GamePanel extends JPanel implements KeyListener {
 
 	Player player = new Player();
+	food f = new food();
 	
 	public GamePanel() {
 		addKeyListener(this);
@@ -18,15 +19,16 @@ public class GamePanel extends JPanel implements KeyListener {
 	@Override
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
-		g.setColor(Color.yellow);
+		g.setColor(Color.black);
 		player.draw(g);
+		f.draw(g);
 	}
 
 	@Override
 	public void keyPressed(KeyEvent e) {
 		int x=player.getX();
 		int y=player.getY();
-		int moveSpeed=5;
+		int moveSpeed=10;
 		
 		if(e.getKeyCode()==KeyEvent.VK_UP) {
 			y=y-moveSpeed;
